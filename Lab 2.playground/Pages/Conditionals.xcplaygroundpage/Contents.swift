@@ -6,7 +6,7 @@
 print("How's it going?")
 
 // Set your current mood as a String below
-var mood : String = "I don't know"
+var mood : String = "Good"
 
 if mood == "Good" {
     print("Glad to hear it!")
@@ -45,9 +45,14 @@ if 2 * 2 == 4 && 3 + 3 == 6 {
 Write an if statement that uses a && to compare the mood and the time. You should only reply Great! when you're in a good mood and the time is greater than 7. Imagine this is AM! It's hard to be in a "Great!" mood before 7am.
 If the time  > 7 and mood is Good then print Great!
 */
-var time : Int = 0
+var time : Int = 5
 
 
+if mood == "Good" && time > 7 {
+    print("Great!")
+} else {
+    print("It is a little early.")
+}
 
 /*:
 Everyone says it's great when work is over, despite their mood.
@@ -73,7 +78,14 @@ if pet == "bunny" || pet == "puppy" {
 
  Test your work by setting the values for mood and time to different values.
 */
+mood = "Okay"
+time = 18
 
+if mood == "Good" || time > 17 {
+    print("Great!")
+} else {
+    print("That's too bad.")
+}
 
 /*:
 ### Conditionals and Functions

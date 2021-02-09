@@ -91,25 +91,22 @@ if mood == "Good" || time > 17 {
 ### Conditionals and Functions
  We heard you're working on a new messaging app. Emojis are popular with your users. Everyone is using the happy face 😀. You're app wants to capitalize on this, you're a genius!
 */
+func stringToEmoji(emotion:String) -> Character {
+    if emotion == "happy" {
+        return("😀")
+    } else {
+        return("🤔")
+    }
+}
+print(stringToEmoji(emotion:"meh"))
+
+print(stringToEmoji(emotion:"happy"))
+
 
 /*:
  - experiment:
  Write a function named stringToEmoji that takes a parameter word of type  String and returns a Character. If the word is "happy" return "😀" otherwise return "🤔".
 */
-
-/*:
- Test your function like this:
- 
- ```
- let response1 = stringToEmoji(word: "meh")
- let response2 = stringToEmoji(word: "happy")
-
- print(response1) // should be 🤔
- print(response2) // should be 😀
- ```
-*/
-
-
 
 /*:
 The emoji thing went over big with the founders. They want more! People use lots of emojis, this could be big.

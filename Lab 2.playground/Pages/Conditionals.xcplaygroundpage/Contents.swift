@@ -125,22 +125,19 @@ Test your work by calling the function four times with four different words and 
 func stringToEmojis(word:String) -> Character {
     if word == "happy" {
         return("😀")
+    } else if word == "chill" {
+        return("😎")
+    } else if word == "lmao" {
+        return("😂")
+    } else if word == "rofl" {
+        return("🤣")
     } else {
-        if word == "chill" {
-            return("😎")
-        } else {
-            if word == "lmao" {
-                return("😂")
-            } else {
-                if word == "rofl" {
-                    return("🤣")
-                } else {
-                    return("🤔")
-                }
-            }
-        }
+        return("🤔")
+        
     }
+    
 }
+        
 print(stringToEmojis(word:"chill"))
 print(stringToEmojis(word:"lmao"))
 print(stringToEmojis(word:"happy"))
@@ -168,26 +165,26 @@ But there are a few details that need some work. While the emojis are good, you 
 func stringsToEmojis(word:String,_:Bool) -> Character {
     if word == "happy" {
         return("😀")
-        } else if word == "good" {
-            return("😀")
-            } else if word == "okay" {
-                return("😀")
-            } else if word == "awesome" {
-                return("😀")
-            } else if word == "lit" {
-                return("😀")
-            } else if word == "fun" {
-                return("😀")
-            } else if word == "chill" {
-            return("😎")
-            } else if word == "lmao" {
-                return("😂")
-            } else if word == "rofl" {
-                return("🤣")
-            } else {
-                return("🤔")
-                }
-            }
+    } else if word == "good" {
+        return("😀")
+    } else if word == "okay" {
+        return("😀")
+    } else if word == "awesome" {
+        return("😀")
+    } else if word == "lit" {
+        return("😀")
+    } else if word == "fun" {
+        return("😀")
+    } else if word == "chill" {
+        return("😎")
+    } else if word == "lmao" {
+        return("😂")
+    } else if word == "rofl" {
+        return("🤣")
+    } else {
+        return("🤔")
+    }
+}
     
 
 print(stringToEmojis(word:"happy"))
